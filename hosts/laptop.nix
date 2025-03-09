@@ -2,6 +2,7 @@
 {
 	imports = [
 		../drivers/audio.nix
+		./pia.nix
 	];
 
 	networking.hostName = "ryan-laptop"; # Define your hostname.
@@ -16,5 +17,9 @@
       grim # screenshot tool
       dunst # cli tool to send notifications (dunstify for screenshot)
 	  vscode
+	  discord
+	  code-cursor
+	  networkmanagerapplet
+	  networkmanager-openvpn
 	];
 }

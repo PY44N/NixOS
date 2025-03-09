@@ -13,9 +13,11 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    sops-nix.url = "github:Mic92/sops-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs: {
     # Please replace my-nixos with your hostname
     nixosConfigurations.ryan-laptop = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -26,6 +28,7 @@
         ./configuration.nix
         ./home.nix
         ./hosts/laptop.nix
+        sops-nix.nixosModules.sops
       ];
       specialArgs = { inherit self inputs; };
     };
