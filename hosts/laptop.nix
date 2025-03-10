@@ -21,5 +21,6 @@
 	  code-cursor
 	  networkmanagerapplet
 	  networkmanager-openvpn
+	  github-desktop
 	];
 }

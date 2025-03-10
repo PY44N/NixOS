@@ -18,6 +18,8 @@
     extraConfig = {
       init.defaultBranch = "main";
     };
+
+    lfs.enable = true;
   };
 
   programs.neovim = {
