@@ -23,5 +23,6 @@
 	  networkmanager-openvpn
 	  github-desktop
 	  cloc
+	  wl-clipboard-rs # provides wl-copy and wl-paste for screenshots
 	];
 }

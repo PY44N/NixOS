@@ -4,6 +4,7 @@
    # wayland.windowManager.hyprland.enable = true; # enable Hyprland
   # Optional, hint Electron apps to use Wayland:
   home.sessionVariables.NIXOS_OZONE_WL = "1";
+  home.sessionVariables.ELECTRON_OZONE_PLATFORM_HINT="wayland";
 
 #  wayland.windowManager.hyprland.enable = true;
 
