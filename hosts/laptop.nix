@@ -2,7 +2,7 @@
 {
 	imports = [
 		../drivers/audio.nix
-		./pia.nix
+		# ./pia.nix
 	];
 
 	networking.hostName = "ryan-laptop"; # Define your hostname.
@@ -22,5 +22,6 @@
 	  networkmanagerapplet
 	  networkmanager-openvpn
 	  github-desktop
+	  cloc
 	];
 }

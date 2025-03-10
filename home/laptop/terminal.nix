@@ -9,7 +9,7 @@
 		enable = true;
 		settings = {
 			font = {
-				size = 14;	
+				size = 12;	
 			};
 		};
 	};
