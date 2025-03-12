@@ -14,7 +14,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    sops-nix.url = "github:Mic92/sops-nix";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.6.0"; # unstable branch. Use github:gmodena/nix-flatpak/?ref=<tag> to pin releases.
   };
 
   outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs: {
@@ -28,7 +28,7 @@
         ./configuration.nix
         ./home.nix
         ./hosts/laptop.nix
-        sops-nix.nixosModules.sops
+        # nix-flatpak.nixosModules.nix-flatpak
       ];
       specialArgs = { inherit self inputs; };
     };

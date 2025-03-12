@@ -29,7 +29,7 @@ source=~/.config/hypr/mocha.conf
 
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
-#monitor=,preferred,auto,1
+monitor=,preferred,auto,1
 
 # Monitors configured with nwg-displays
 #source=~/.config/hypr/monitors.conf

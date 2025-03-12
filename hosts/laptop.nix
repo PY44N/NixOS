@@ -8,6 +8,11 @@
 	networking.hostName = "ryan-laptop"; # Define your hostname.
 	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
+	# services.flatpak.enable = true;
+		
+	# services.flatpak.packages = [
+	# 	"com.todoist.Todoist"
+	# ];
 
 	environment.systemPackages = with pkgs; [
 	  rofi-wayland
@@ -24,5 +29,7 @@
 	  github-desktop
 	  cloc
 	  wl-clipboard-rs # provides wl-copy and wl-paste for screenshots
+	  jetbrains.idea-ultimate
+	  google-chrome
 	];
 }
