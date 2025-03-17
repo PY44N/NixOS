@@ -38,7 +38,7 @@ monitor=,preferred,auto,1
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
 # Execute your favorite apps at launch
-exec-once = waybar & swaync & todoist #& hyprpaper & firefox
+exec-once = waybar & swaync #& todoist #& hyprpaper & firefox
 
 # Source a file (multi-file configs)
 # source = ~/.config/hypr/myColors.conf
@@ -53,7 +53,6 @@ $menu = rofi -show drun
 # Some default env vars.
 env = XCURSOR_SIZE,24
 env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
-
 
 # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 input {

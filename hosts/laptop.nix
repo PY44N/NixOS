@@ -31,5 +31,12 @@
 	  wl-clipboard-rs # provides wl-copy and wl-paste for screenshots
 	  jetbrains.idea-ultimate
 	  google-chrome
+	  slack
+	  proton-pass
+	  
+      # neovim required a lot of these to run properly
+      gnumake
+      unzip
+      jdk21
 	];
 }
