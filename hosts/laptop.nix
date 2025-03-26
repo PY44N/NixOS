@@ -33,7 +33,12 @@
 	  google-chrome
 	  slack
 	  proton-pass
-	  
+	  bambu-studio
+	  todoist-electron
+	  zotero
+	  rofi-vpn
+	  logseq
+
       # neovim required a lot of these to run properly
       gnumake
       unzip

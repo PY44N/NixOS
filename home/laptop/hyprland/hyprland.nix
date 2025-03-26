@@ -165,7 +165,8 @@ bind = $mainMod, RETURN, exec, $terminal
 bind = $mainMod, Q, killactive, 
 bind = $mainMod, M, exit, 
 bind = $mainMod, E, exec, $fileManager
-bind = $mainMod, V, togglefloating, 
+# bind = $mainMod, V, togglefloating,
+bind = $mainMod, V, exec, rofi-vpn 
 bind = $mainMod, P, exec, $menu
 bind = $mainMod, R, pseudo, # dwindle
 bind = $mainMod, G, togglesplit, # dwindle
@@ -240,7 +241,6 @@ bind = SHIFT, Print, exec, grim - | wl-copy && wl-paste > ~/Pictures/Screenshots
 # lock on ctrl, alt, delete and lid close
 bind = CONTROL_ALT, Delete, exec, hyprlock
 bindl=,switch:off:Lid Switch, exec, hyprlock --immediate
-
 
   '';
 }

@@ -34,6 +34,11 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  # Allows logseq to work
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-27.3.11"
+  ];
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
