@@ -235,8 +235,10 @@ bind = ,XF86MonBrightnessUp, exec, brightnessctl s +10%
 bind = ,XF86MonBrightnessDown, exec, brightnessctl s 10%-
 
 # screenshot 
-bind =, Print, exec, grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | dunstify "Screenshot of the region taken" -t 1000 # screenshot of a region 
-bind = SHIFT, Print, exec, grim - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | dunstify "Screenshot of whole screen taken" -t 1000 # screenshot of the whole scree
+# bind =, Print, exec, grim -g "$(slurp)" - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | dunstify "Screenshot of the region taken" -t 1000 # screenshot of a region 
+# bind = SHIFT, Print, exec, grim - | wl-copy && wl-paste > ~/Pictures/Screenshots/Screenshot-$(date +%F_%T).png | dunstify "Screenshot of whole screen taken" -t 1000 # screenshot of the whole scree
+bind =, Print, exec, hyprshot -m region -o ~/Pictures/Screenshots/
+bind = SHIFT, Print, exec, hyprshot -m output -o ~/Pictures/Screenshots/
 
 # lock on ctrl, alt, delete and lid close
 bind = CONTROL_ALT, Delete, exec, hyprlock

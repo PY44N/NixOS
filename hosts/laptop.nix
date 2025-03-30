@@ -19,8 +19,7 @@
 	  font-awesome # waybar styling requires this
 	  pavucontrol # pulse audio volume control (triggered by clicking volume in waybar)	
       swaynotificationcenter
-      grim # screenshot tool
-      dunst # cli tool to send notifications (dunstify for screenshot)
+      hyprshot
 	  vscode
 	  discord
 	  code-cursor
@@ -38,6 +37,8 @@
 	  zotero
 	  rofi-vpn
 	  logseq
+      pdfarranger
+      brightnessctl # brightness control used in hyprland config
 
       # neovim required a lot of these to run properly
       gnumake
