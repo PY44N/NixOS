@@ -26,13 +26,6 @@
 	services.xserver.displayManager.gdm.enable = true;
 	services.xserver.desktopManager.gnome.enable = true;
 
-	programs.hyprland = {
-		# Install the packages from nixpkgs
-		enable = true;
-		# Whether to enable XWayland
-		xwayland.enable = true;
-	};
-
 	# Configure keymap in X11
 	services.xserver.xkb = {
 		layout = "us";
@@ -43,19 +36,11 @@
 	services.printing.enable = true;
 
 	environment.systemPackages = with pkgs; [
-	  rofi-wayland
-	  font-awesome # waybar styling requires this
-	  pavucontrol # pulse audio volume control (triggered by clicking volume in waybar)	
-      swaynotificationcenter
-      hyprshot
 	  vscode
 	  discord
 	  code-cursor
-	  networkmanagerapplet
-	  networkmanager-openvpn
 	  github-desktop
 	  cloc
-	  wl-clipboard-rs # provides wl-copy and wl-paste for screenshots
 	  jetbrains.idea-ultimate
 	  google-chrome
 	  slack
@@ -63,14 +48,7 @@
 	  bambu-studio
 	  todoist-electron
 	  zotero
-	  rofi-vpn
 	  logseq
       pdfarranger
-      brightnessctl # brightness control used in hyprland config
-
-      # neovim required a lot of these to run properly
-      gnumake
-      unzip
-      jdk21
 	];
 }

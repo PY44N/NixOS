@@ -7,7 +7,10 @@
   ];
 
   home.packages = with pkgs ; [
-    neofetch
+          # neovim required a lot of these to run properly
+      gnumake
+      unzip
+      jdk21
   ];
 
   programs.neovim = {

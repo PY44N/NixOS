@@ -1,6 +1,10 @@
 {config, pkgs, ...}:
 
 {
+home.packages = with pkgs ; [
+	  font-awesome # waybar styling requires this
+];
+
   programs.waybar = {
   	enable = true;
   	settings = {

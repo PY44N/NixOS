@@ -1,7 +1,21 @@
 {config, pkgs, ...}:
 
 {
-   # wayland.windowManager.hyprland.enable = true; # enable Hyprland
+  home.packages = with pkgs ; [
+        pavucontrol # pulse audio volume control (triggered by clicking volume in waybar)	
+      swaynotificationcenter
+      hyprshot
+        networkmanagerapplet
+	  networkmanager-openvpn
+      brightnessctl # brightness control used in hyprland config
+	#   wl-clipboard-rs # provides wl-copy and wl-paste for screenshots
+  ];
+
+   wayland.windowManager.hyprland = {
+    enable = true; # enable Hyprland
+		xwayland.enable = true;
+
+   };
   # Optional, hint Electron apps to use Wayland:
   home.sessionVariables.NIXOS_OZONE_WL = "1";
   home.sessionVariables.ELECTRON_OZONE_PLATFORM_HINT="wayland";

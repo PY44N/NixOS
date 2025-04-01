@@ -64,6 +64,7 @@
      btop
      bat
      openssh
+     neofetch
   ];
 
   # Delete generations older than 7 days
