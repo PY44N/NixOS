@@ -6,7 +6,7 @@
     useGlobalPkgs = true;
 
     users.ryan = {
-      imports = [./home/laptop];
+      imports = [./home/laptop ./home/common.nix];
 
       home = {
         username = "ryan";
