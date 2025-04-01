@@ -11,9 +11,9 @@
 			font = {
 				size = 12;	
 			};
-			# terminal.shell = {
-			# 	program = "/etc/profiles/per-user/${config.home.username}/bin/nu";
-			# };
+			terminal.shell = {
+				program = "/etc/profiles/per-user/${config.home.username}/bin/bash";
+			};
 		};
 	};
 
