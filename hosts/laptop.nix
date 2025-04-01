@@ -35,6 +35,8 @@
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
 
+	users.defaultUserShell = pkgs.nushell;
+
 	environment.systemPackages = with pkgs; [
 	  vscode
 	  discord
