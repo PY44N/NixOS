@@ -39,10 +39,14 @@
 		variant = "";
 	};
 
+
+	users.users.guest = {
+		isNormalUser = true;
+		description = "Guest";
+	};
+
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
-
-	users.defaultUserShell = pkgs.nushell;
 
 	environment.systemPackages = with pkgs; [
 	  vscode
