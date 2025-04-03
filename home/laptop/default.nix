@@ -11,6 +11,11 @@
       gnumake
       unzip
       jdk21
+      tree-sitter
+      nodejs_23
+	  wl-clipboard-rs # provides wl-copy and wl-paste for screenshot
+    ripgrep
+    fd
   ];
 
   programs.neovim = {

@@ -42,7 +42,7 @@
   users.users.ryan = {
     isNormalUser = true;
     description = "Ryan";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker"];
     # packages = with pkgs; [
     #  thunderbird
     # ];

@@ -47,6 +47,7 @@
 
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
+    # virtualisation.docker.enable = true;
 
 	environment.systemPackages = with pkgs; [
 	  vscode
@@ -63,5 +64,6 @@
 	  zotero
 	  logseq
       pdfarranger
+      obsidian
 	];
 }
