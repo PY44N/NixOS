@@ -4,6 +4,7 @@
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
+    extraSpecialArgs = { inherit inputs; };
 
     users.ryan = {
       imports = [./home/laptop ./home/common.nix];

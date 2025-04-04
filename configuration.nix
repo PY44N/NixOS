@@ -64,6 +64,7 @@
      bat
      openssh
      neofetch
+    wget
   ];
 
   # Delete generations older than 7 days

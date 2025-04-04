@@ -13,6 +13,13 @@
       # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+        nixvim = {
+      url = "github:nix-community/nixvim";
+      # url = "github:mikaelfangel/nixvim-config";
+      # flake = false;
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs: {

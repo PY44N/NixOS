@@ -3,6 +3,7 @@
 {
   imports = [
   	./hyprland
+  ./nixvim
 	./terminal.nix
   ];
 
@@ -18,9 +19,9 @@
     fd
   ];
 
-  programs.neovim = {
-    enable = true;
-  };
+  # programs.neovim = {
+  #   enable = true;
+  # };
 
   # This value determines the home Manager release that your
   # configuration is compatible with. This helps avoid breakage

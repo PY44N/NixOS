@@ -65,5 +65,13 @@
 	  logseq
       pdfarranger
       obsidian
+      rustup
+    lua
+    luarocks
+    php
+    go
+    python312
+    julia
+    gcc
 	];
 }
