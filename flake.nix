@@ -37,5 +37,15 @@
       ];
       specialArgs = { inherit self inputs; };
     };
+
+    nixosConfigurations.optiplex = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./hardware/optiplex-hardware-configuration.nix
+        ./configuration.nix
+        ./hosts/optiplex.nix
+      ];
+      specialArgs = { inherit self; };
+    };
   };
 }

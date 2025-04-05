@@ -73,6 +73,9 @@
   nix.gc.dates = "daily";
   nix.gc.options = "--delete-older-than 7d"; 
 
+  # Trust user (allows remote deploy)
+  nix.settings.trusted-users = [ "ryan" ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
