@@ -1,4 +1,4 @@
-{ pkgs, config, ...}:
+{ pkgs, config, unstable, ...}:
 {
 	imports = [
 		../drivers/audio.nix
@@ -52,7 +52,7 @@
 	environment.systemPackages = with pkgs; [
 	  vscode
 	  discord
-	  code-cursor
+	  cursor # from custom cursor package
 	  github-desktop
 	  cloc
 	  jetbrains.idea-ultimate
@@ -73,5 +73,9 @@
     python312
     julia
     gcc
-	];
+	cloudflare-warp
+	obs-studio
+	] /*++ (with unstable; [
+	  code-cursor
+	])*/;
 }

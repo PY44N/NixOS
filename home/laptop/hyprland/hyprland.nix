@@ -48,7 +48,6 @@ monitor=,preferred,auto,1
 # Monitors configured with nwg-displays
 #source=~/.config/hypr/monitors.conf
 
-
 # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
 # Execute your favorite apps at launch
@@ -66,6 +65,7 @@ $menu = rofi -show drun
 
 # Some default env vars.
 env = XCURSOR_SIZE,24
+env = XCURSOR_THEME,breeze
 env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
 
 # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
