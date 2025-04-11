@@ -8,6 +8,7 @@
     ./tree-sitter.nix
     ./telescope.nix
     ./nix.nix
+    ./autopairs.nix
   ];
 
   programs.nixvim = {
