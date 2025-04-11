@@ -11,6 +11,9 @@
 			font = {
 				size = 12;	
 			};
+			window = {
+				opacity = 0.9;
+			};
 			terminal.shell = {
 				program = "/etc/profiles/per-user/${config.home.username}/bin/bash";
 			};
