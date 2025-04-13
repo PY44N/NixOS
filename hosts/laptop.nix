@@ -47,12 +47,13 @@
 
 	# Enable CUPS to print documents.
 	services.printing.enable = true;
-    # virtualisation.docker.enable = true;
+    virtualisation.docker.enable = true;
 
 	environment.systemPackages = with pkgs; [
 	  vscode
 	  discord
 	  cursor # from custom cursor package
+	  docker
 	  github-desktop
 	  cloc
 	  jetbrains.idea-ultimate
