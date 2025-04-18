@@ -75,7 +75,8 @@
     julia
     gcc
 	cloudflare-warp
-	obs-studio
+    obs-studio
+    localsend
 	] /*++ (with unstable; [
 	  code-cursor
 	])*/;
